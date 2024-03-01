@@ -1,0 +1,7 @@
+.card {
+  @apply relative h-96 w-72 rounded-xl bg-gradient-to-br from-slate-800 to-slate-950;
+
+  > div {
+    @apply absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg overflow-hidden;
+  }
+}

@@ -1,0 +1,17 @@
+.title {
+  @apply text-2xl font-medium;
+}
+
+.text {
+  @apply text-base font-normal;
+}
+
+@media (min-width: 768px) {
+  .title {
+    @apply text-[48px];
+  }
+
+  .text {
+    @apply text-[24px];
+  }
+}

@@ -1,0 +1,65 @@
+.wrap {
+  @apply py-[30px];
+
+  > div {
+    > div {
+      @apply flex flex-col;
+    }
+
+    > div:first-child {
+      > h1 {
+        @apply text-center mb-2;
+      }
+
+      > p {
+        @apply text-center text-gray;
+      }
+    }
+
+    > div:nth-child(2) {
+      @apply min-h-[400px];
+
+      > div {
+        > div {
+          @apply min-h-[400px];
+        }
+      }
+    }
+
+    > div:nth-child(3) {
+      @apply gap-8;
+
+      > p {
+        @apply text-center text-gray;
+
+        > a {
+          @apply text-[#9cdcfe] underline;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    > div {
+      > div:first-child {
+        @apply mb-[60px];
+
+        > h1 {
+          @apply mb-8;
+        }
+      }
+
+      > div:nth-child(2) {
+        @apply min-h-[800px];
+
+        > div {
+          > div {
+            @apply min-h-[800px];
+          }
+        }
+      }
+    }
+  }
+}

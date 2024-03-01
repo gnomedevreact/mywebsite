@@ -1,0 +1,9 @@
+.section {
+  @apply py-[30px];
+}
+
+@media (min-width: 768px) {
+  .section {
+    @apply py-[100px];
+  }
+}

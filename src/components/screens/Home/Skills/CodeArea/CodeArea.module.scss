@@ -1,0 +1,53 @@
+.wrap {
+  @apply flex flex-col text-[12px] font-normal;
+}
+
+.row {
+  @apply flex items-center flex-nowrap w-full;
+
+  &:hover {
+    @apply bg-[#484848];
+  }
+}
+
+.naming {
+  @apply flex items-center flex-nowrap text-[#44c9a2];
+}
+
+.method {
+  @apply flex items-center flex-nowrap text-[#2d7ad6];
+}
+
+.bracket {
+  @apply text-[#ffd70e];
+}
+
+.string {
+  @apply flex items-center flex-nowrap text-[#9cdcfe];
+}
+
+.char {
+  @apply text-white ml-[2px];
+}
+
+.special {
+  @apply text-[#b670cb];
+}
+
+.text {
+  @apply text-[#ce723c];
+}
+
+.function {
+  @apply flex items-center flex-nowrap text-[#dcdcaa];
+}
+
+.square {
+  @apply text-[#1790c4];
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    @apply text-[25px];
+  }
+}

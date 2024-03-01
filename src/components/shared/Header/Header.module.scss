@@ -1,0 +1,19 @@
+.header {
+  .wrap {
+    @apply py-[30px];
+
+    > h1 {
+      @apply text-xl font-bold animate-fadeIn;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    .wrap {
+      > h1 {
+        @apply text-[40px];
+      }
+    }
+  }
+}

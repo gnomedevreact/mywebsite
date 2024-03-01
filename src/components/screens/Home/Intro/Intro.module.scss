@@ -1,0 +1,46 @@
+.wrap {
+  @apply flex flex-col relative;
+
+  > div:first-child {
+    @apply absolute -top-[35%] left-1/2 -z-10 animate-fadeIn;
+    transform: translate(-50%);
+
+    > svg {
+      @apply min-w-[260px] min-h-[260px];
+    }
+  }
+
+  > h1 {
+    @apply text-[26px] font-medium text-center mb-2 animate-fadeIn;
+  }
+
+  > p {
+    @apply text-base font-normal text-gray text-center mb-8 animate-fadeIn;
+  }
+
+  .btn {
+    @apply self-center w-[80%] animate-fadeIn;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    > div:first-child {
+      > svg {
+        @apply min-w-[35px] min-h-[350px];
+      }
+    }
+
+    > h1 {
+      @apply text-[48px];
+    }
+
+    > p {
+      @apply text-[24px] leading-8;
+    }
+
+    .btn {
+      @apply w-[30%];
+    }
+  }
+}

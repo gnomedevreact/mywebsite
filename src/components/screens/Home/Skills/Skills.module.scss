@@ -1,0 +1,5 @@
+.wrap {
+  > div:first-child {
+    @apply flex items-center justify-center;
+  }
+}

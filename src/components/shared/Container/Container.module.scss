@@ -1,0 +1,10 @@
+.container {
+  @apply px-[15px];
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply max-w-[1120px] px-[15px];
+    margin: 0 auto;
+  }
+}

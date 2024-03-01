@@ -1,0 +1,4 @@
+.bar {
+  @apply sticky top-0 h-[7px] w-full origin-left z-[999];
+  background-color: hsl(240, 55%, 30%);
+}

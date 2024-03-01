@@ -1,0 +1,51 @@
+.section {
+  @apply flex justify-center items-center h-[200px] w-full;
+
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.32) 0%,
+      rgba(0, 0, 0, 0.32) 100%
+    ),
+    url("/images/portal.gif"), black 50% / cover no-repeat;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  > div {
+    @apply rounded-lg flex items-center gap-2 p-5;
+
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.5);
+
+    > a {
+      > svg {
+        @apply w-[30px] h-[30px];
+      }
+    }
+
+    > a:nth-child(3) {
+      > svg {
+        @apply ml-1 w-5 h-[24px];
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    > div {
+      @apply rounded-lg flex items-center gap-2 p-10;
+
+      > a {
+        > svg {
+          @apply w-[50px] h-[50px];
+        }
+      }
+
+      > a:nth-child(3) {
+        > svg {
+          @apply ml-1 w-5 h-[24px];
+        }
+      }
+    }
+  }
+}

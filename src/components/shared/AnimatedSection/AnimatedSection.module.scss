@@ -1,0 +1,9 @@
+.wrap {
+  @apply py-[30px];
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    @apply py-[100px];
+  }
+}

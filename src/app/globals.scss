@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-black text-white relative;
+  overflow-x: clip;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  touch-action: pan-y;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.gradient1 {
+  @apply h-[824px] w-[1298px] top-0 translate-x-[-40%] translate-y-[-15%];
+}
+
+.gradient2 {
+  @apply h-[824px] w-[1298px] top-0 translate-x-[-34%] translate-y-[110%];
+}
+
+@media (min-width: 768px) {
+  .gradient1 {
+    @apply translate-x-[15%];
+  }
+
+  .gradient2 {
+    @apply translate-x-[15%] translate-y-[200%];
+  }
+}

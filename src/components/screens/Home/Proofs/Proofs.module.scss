@@ -1,0 +1,13 @@
+.wrap {
+  > div:first-child {
+    @apply flex flex-col items-center gap-[30px];
+  }
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    > div:first-child {
+      @apply flex-row flex-wrap justify-between;
+    }
+  }
+}
